@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2FA3AB501F7CEFC100F85711 /* BABYStringEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA3AB4D1F7CEFC100F85711 /* BABYStringEncoding.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2FB951481F53F10F00E3CA51 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB951471F53F10F00E3CA51 /* CloudKit.framework */; };
+		2FB9514A1F53F1F400E3CA51 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB951491F53F1F400E3CA51 /* GameKit.framework */; };
+		2FEBB8D21F4EB4C30054C19C /* put ipa or app here in Resources */ = {isa = PBXBuildFile; fileRef = 2FEBB8D11F4EB4C30054C19C /* put ipa or app here */; };
+		2FEBB8DB1F4EB4C30054C19C /* Cycript.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FEBB8DA1F4EB4C30054C19C /* Cycript.framework */; };
+		2FEBB8DD1F4EB4C30054C19C /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FEBB8DC1F4EB4C30054C19C /* JavaScriptCore.framework */; };
+		2FEBB8DF1F4EB4C30054C19C /* RevealServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FEBB8DE1F4EB4C30054C19C /* RevealServer.framework */; };
+		2FEBB8E11F4EB4C30054C19C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FEBB8E01F4EB4C30054C19C /* Foundation.framework */; };
+		2FEBB8E31F4EB4C30054C19C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FEBB8E21F4EB4C30054C19C /* UIKit.framework */; };
+		2FEBB8E71F4EB4C30054C19C /* JRSwizzle.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FEBB8E61F4EB4C30054C19C /* JRSwizzle.h */; };
+		2FEBB8E91F4EB4C30054C19C /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FEBB8E81F4EB4C30054C19C /* JRSwizzle.m */; };
+		2FEBB8EC1F4EB4C30054C19C /* CaptainHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FEBB8EB1F4EB4C30054C19C /* CaptainHook.h */; };
+		2FEBB8EE1F4EB4C30054C19C /* fs18iapDylib-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 2FEBB8ED1F4EB4C30054C19C /* fs18iapDylib-Prefix.pch */; };
+		2FEBB8F11F4EB4C30054C19C /* AntiAntiDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FEBB8F01F4EB4C30054C19C /* AntiAntiDebug.m */; };
+		2FEBB8F41F4EB4C30054C19C /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 2FEBB8F31F4EB4C30054C19C /* fishhook.c */; };
+		2FEBB8F61F4EB4C30054C19C /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FEBB8F51F4EB4C30054C19C /* fishhook.h */; };
+		2FEBB8F81F4EB4C30054C19C /* fs18iapDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FEBB8F71F4EB4C30054C19C /* fs18iapDylib.h */; };
+		2FEBB8FA1F4EB4C30054C19C /* fs18iapDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FEBB8F91F4EB4C30054C19C /* fs18iapDylib.m */; };
+		2FEBB9041F5023790054C19C /* CydiaSubstrate.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FEBB9031F5023790054C19C /* CydiaSubstrate.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2F274C4C2542BB210095055D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2FA3AB4D1F7CEFC100F85711 /* BABYStringEncoding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BABYStringEncoding.m; sourceTree = "<group>"; };
+		2FA3AB4E1F7CEFC100F85711 /* BABYStringEncoding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BABYStringEncoding.h; sourceTree = "<group>"; };
+		2FA3AB4F1F7CEFC100F85711 /* BABYDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BABYDefines.h; sourceTree = "<group>"; };
+		2FB951461F53F10700E3CA51 /* fs18iap.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = fs18iap.entitlements; sourceTree = "<group>"; };
+		2FB951471F53F10F00E3CA51 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		2FB951491F53F1F400E3CA51 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		2FEBB8CD1F4EB4C30054C19C /* fs18iap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fs18iap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FEBB8D11F4EB4C30054C19C /* put ipa or app here */ = {isa = PBXFileReference; lastKnownFileType = text; name = "put ipa or app here"; path = "TargetApp/put ipa or app here"; sourceTree = "<group>"; };
+		2FEBB8D31F4EB4C30054C19C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FEBB8D81F4EB4C30054C19C /* libfs18iapDylib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libfs18iapDylib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FEBB8DA1F4EB4C30054C19C /* Cycript.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cycript.framework; path = Library/Frameworks/Cycript.framework; sourceTree = DEVELOPER_DIR; };
+		2FEBB8DC1F4EB4C30054C19C /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		2FEBB8DE1F4EB4C30054C19C /* RevealServer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RevealServer.framework; path = Library/Frameworks/RevealServer.framework; sourceTree = DEVELOPER_DIR; };
+		2FEBB8E01F4EB4C30054C19C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2FEBB8E21F4EB4C30054C19C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2FEBB8E61F4EB4C30054C19C /* JRSwizzle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JRSwizzle.h; path = JRSwizzle/JRSwizzle.h; sourceTree = "<group>"; };
+		2FEBB8E81F4EB4C30054C19C /* JRSwizzle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = JRSwizzle.m; path = JRSwizzle/JRSwizzle.m; sourceTree = "<group>"; };
+		2FEBB8EB1F4EB4C30054C19C /* CaptainHook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CaptainHook.h; path = CaptainHook/CaptainHook.h; sourceTree = "<group>"; };
+		2FEBB8ED1F4EB4C30054C19C /* fs18iapDylib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "fs18iapDylib-Prefix.pch"; sourceTree = "<group>"; };
+		2FEBB8F01F4EB4C30054C19C /* AntiAntiDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AntiAntiDebug.m; path = AntiAntiDebug/AntiAntiDebug.m; sourceTree = "<group>"; };
+		2FEBB8F31F4EB4C30054C19C /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = fishhook.c; path = fishhook/fishhook.c; sourceTree = "<group>"; };
+		2FEBB8F51F4EB4C30054C19C /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fishhook.h; path = fishhook/fishhook.h; sourceTree = "<group>"; };
+		2FEBB8F71F4EB4C30054C19C /* fs18iapDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fs18iapDylib.h; sourceTree = "<group>"; };
+		2FEBB8F91F4EB4C30054C19C /* fs18iapDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fs18iapDylib.m; sourceTree = "<group>"; };
+		2FEBB9031F5023790054C19C /* CydiaSubstrate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CydiaSubstrate.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2FEBB8C91F4EB4C30054C19C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FB951481F53F10F00E3CA51 /* CloudKit.framework in Frameworks */,
+				2FB9514A1F53F1F400E3CA51 /* GameKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FEBB8D51F4EB4C30054C19C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FEBB8DD1F4EB4C30054C19C /* JavaScriptCore.framework in Frameworks */,
+				2FEBB8DF1F4EB4C30054C19C /* RevealServer.framework in Frameworks */,
+				2FEBB8DB1F4EB4C30054C19C /* Cycript.framework in Frameworks */,
+				2FEBB8E11F4EB4C30054C19C /* Foundation.framework in Frameworks */,
+				2FEBB8E31F4EB4C30054C19C /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2FEBB8C31F4EB4C20054C19C = {
+			isa = PBXGroup;
+			children = (
+				2F274C4C2542BB210095055D /* README.md */,
+				2FEBB8CF1F4EB4C30054C19C /* fs18iap */,
+				2FEBB8E41F4EB4C30054C19C /* fs18iapDylib */,
+				2FEBB8D91F4EB4C30054C19C /* Frameworks */,
+				2FEBB8CE1F4EB4C30054C19C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2FEBB8CE1F4EB4C30054C19C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2FEBB8CD1F4EB4C30054C19C /* fs18iap.app */,
+				2FEBB8D81F4EB4C30054C19C /* libfs18iapDylib.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2FEBB8CF1F4EB4C30054C19C /* fs18iap */ = {
+			isa = PBXGroup;
+			children = (
+				2FB951461F53F10700E3CA51 /* fs18iap.entitlements */,
+				2FEBB8D31F4EB4C30054C19C /* Info.plist */,
+				2FEBB8D01F4EB4C30054C19C /* TargetApp */,
+			);
+			path = fs18iap;
+			sourceTree = "<group>";
+		};
+		2FEBB8D01F4EB4C30054C19C /* TargetApp */ = {
+			isa = PBXGroup;
+			children = (
+				2FEBB8D11F4EB4C30054C19C /* put ipa or app here */,
+			);
+			name = TargetApp;
+			sourceTree = "<group>";
+		};
+		2FEBB8D91F4EB4C30054C19C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2FB951491F53F1F400E3CA51 /* GameKit.framework */,
+				2FB951471F53F10F00E3CA51 /* CloudKit.framework */,
+				2FEBB8DA1F4EB4C30054C19C /* Cycript.framework */,
+				2FEBB8DC1F4EB4C30054C19C /* JavaScriptCore.framework */,
+				2FEBB8DE1F4EB4C30054C19C /* RevealServer.framework */,
+				2FEBB8E01F4EB4C30054C19C /* Foundation.framework */,
+				2FEBB8E21F4EB4C30054C19C /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2FEBB8E41F4EB4C30054C19C /* fs18iapDylib */ = {
+			isa = PBXGroup;
+			children = (
+				2FA3AB4F1F7CEFC100F85711 /* BABYDefines.h */,
+				2FA3AB4E1F7CEFC100F85711 /* BABYStringEncoding.h */,
+				2FA3AB4D1F7CEFC100F85711 /* BABYStringEncoding.m */,
+				2FEBB9031F5023790054C19C /* CydiaSubstrate.h */,
+				2FEBB8ED1F4EB4C30054C19C /* fs18iapDylib-Prefix.pch */,
+				2FEBB8F71F4EB4C30054C19C /* fs18iapDylib.h */,
+				2FEBB8F91F4EB4C30054C19C /* fs18iapDylib.m */,
+				2FEBB8E51F4EB4C30054C19C /* JRSwizzle */,
+				2FEBB8EA1F4EB4C30054C19C /* CaptainHook */,
+				2FEBB8EF1F4EB4C30054C19C /* AntiAntiDebug */,
+				2FEBB8F21F4EB4C30054C19C /* fishhook */,
+			);
+			path = fs18iapDylib;
+			sourceTree = "<group>";
+		};
+		2FEBB8E51F4EB4C30054C19C /* JRSwizzle */ = {
+			isa = PBXGroup;
+			children = (
+				2FEBB8E61F4EB4C30054C19C /* JRSwizzle.h */,
+				2FEBB8E81F4EB4C30054C19C /* JRSwizzle.m */,
+			);
+			name = JRSwizzle;
+			sourceTree = "<group>";
+		};
+		2FEBB8EA1F4EB4C30054C19C /* CaptainHook */ = {
+			isa = PBXGroup;
+			children = (
+				2FEBB8EB1F4EB4C30054C19C /* CaptainHook.h */,
+			);
+			name = CaptainHook;
+			sourceTree = "<group>";
+		};
+		2FEBB8EF1F4EB4C30054C19C /* AntiAntiDebug */ = {
+			isa = PBXGroup;
+			children = (
+				2FEBB8F01F4EB4C30054C19C /* AntiAntiDebug.m */,
+			);
+			name = AntiAntiDebug;
+			sourceTree = "<group>";
+		};
+		2FEBB8F21F4EB4C30054C19C /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				2FEBB8F31F4EB4C30054C19C /* fishhook.c */,
+				2FEBB8F51F4EB4C30054C19C /* fishhook.h */,
+			);
+			name = fishhook;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2FEBB8D61F4EB4C30054C19C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FEBB8EE1F4EB4C30054C19C /* fs18iapDylib-Prefix.pch in Headers */,
+				2FEBB9041F5023790054C19C /* CydiaSubstrate.h in Headers */,
+				2FEBB8EC1F4EB4C30054C19C /* CaptainHook.h in Headers */,
+				2FEBB8E71F4EB4C30054C19C /* JRSwizzle.h in Headers */,
+				2FEBB8F61F4EB4C30054C19C /* fishhook.h in Headers */,
+				2FEBB8F81F4EB4C30054C19C /* fs18iapDylib.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2FEBB8CC1F4EB4C30054C19C /* fs18iap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FEBB8FD1F4EB4C30054C19C /* Build configuration list for PBXNativeTarget "fs18iap" */;
+			buildPhases = (
+				2FEBB8C81F4EB4C30054C19C /* Sources */,
+				2FEBB8C91F4EB4C30054C19C /* Frameworks */,
+				2FEBB8CA1F4EB4C30054C19C /* Resources */,
+				2FEBB8CB1F4EB4C30054C19C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fs18iap;
+			productName = fs18iap;
+			productReference = 2FEBB8CD1F4EB4C30054C19C /* fs18iap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2FEBB8D71F4EB4C30054C19C /* fs18iapDylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FEBB9001F4EB4C30054C19C /* Build configuration list for PBXNativeTarget "fs18iapDylib" */;
+			buildPhases = (
+				2FEBB8D41F4EB4C30054C19C /* Sources */,
+				2FEBB8D51F4EB4C30054C19C /* Frameworks */,
+				2FEBB8D61F4EB4C30054C19C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fs18iapDylib;
+			productName = fs18iapDylib;
+			productReference = 2FEBB8D81F4EB4C30054C19C /* libfs18iapDylib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2FEBB8C41F4EB4C30054C19C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = obaby;
+				TargetAttributes = {
+					2FEBB8CC1F4EB4C30054C19C = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 49U329UV5Q;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
+					};
+					2FEBB8D71F4EB4C30054C19C = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 49U329UV5Q;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 2FEBB8C71F4EB4C30054C19C /* Build configuration list for PBXProject "fs18iap" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+			);
+			mainGroup = 2FEBB8C31F4EB4C20054C19C;
+			productRefGroup = 2FEBB8CE1F4EB4C30054C19C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2FEBB8CC1F4EB4C30054C19C /* fs18iap */,
+				2FEBB8D71F4EB4C30054C19C /* fs18iapDylib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2FEBB8CA1F4EB4C30054C19C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FEBB8D21F4EB4C30054C19C /* put ipa or app here in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2FEBB8CB1F4EB4C30054C19C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = /opt/MonkeyDev/Tools/pack.sh;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2FEBB8C81F4EB4C30054C19C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FEBB8D41F4EB4C30054C19C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FEBB8E91F4EB4C30054C19C /* JRSwizzle.m in Sources */,
+				2FA3AB501F7CEFC100F85711 /* BABYStringEncoding.m in Sources */,
+				2FEBB8FA1F4EB4C30054C19C /* fs18iapDylib.m in Sources */,
+				2FEBB8F41F4EB4C30054C19C /* fishhook.c in Sources */,
+				2FEBB8F11F4EB4C30054C19C /* AntiAntiDebug.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2FEBB8FB1F4EB4C30054C19C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2FEBB8FC1F4EB4C30054C19C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2FEBB8FE1F4EB4C30054C19C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = fs18iap/fs18iap.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 49U329UV5Q;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = fs18iap/Info.plist;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = "mars.com.giants-software.fs18";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		2FEBB8FF1F4EB4C30054C19C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = fs18iap/fs18iap.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 49U329UV5Q;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = fs18iap/Info.plist;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = "mars.com.giants-software.fs18";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+		2FEBB9011F4EB4C30054C19C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 49U329UV5Q;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "fs18iapDylib/fs18iapDylib-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = /usr/lib;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"fs18iapDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-lsubstrate",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		2FEBB9021F4EB4C30054C19C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = 49U329UV5Q;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "fs18iapDylib/fs18iapDylib-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = /usr/lib;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"fs18iapDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-lsubstrate",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2FEBB8C71F4EB4C30054C19C /* Build configuration list for PBXProject "fs18iap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FEBB8FB1F4EB4C30054C19C /* Debug */,
+				2FEBB8FC1F4EB4C30054C19C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FEBB8FD1F4EB4C30054C19C /* Build configuration list for PBXNativeTarget "fs18iap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FEBB8FE1F4EB4C30054C19C /* Debug */,
+				2FEBB8FF1F4EB4C30054C19C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FEBB9001F4EB4C30054C19C /* Build configuration list for PBXNativeTarget "fs18iapDylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FEBB9011F4EB4C30054C19C /* Debug */,
+				2FEBB9021F4EB4C30054C19C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2FEBB8C41F4EB4C30054C19C /* Project object */;
+}
